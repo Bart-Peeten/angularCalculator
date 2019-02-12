@@ -1,3 +1,11 @@
-<p>
-  calculator works!
-</p>
+<label>1ste getal: </label>
+<input type="text" name="firstValue" class="inputText" [(ngModel)]="firstValue"><br>
+
+<label>2de getal: </label>
+<input type="text" name="secondValue" class="inputText" [(ngModel)]="secondValue"><br>
+
+<input type="button" value="Optellen" (click)="add()" class="optellenButton">
+
+<div *ngIf="isClicked" >
+  Het resultaat is: {{ result }}
+</div>
